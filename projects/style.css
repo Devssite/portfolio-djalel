@@ -1,112 +1,85 @@
-/* ===== Dark Theme ===== */
+/* =========================
+   FORCE DARK MODE
+========================= */
 
-body{
-  background: #0b0b0b;
-  color: #ffffff;
+/* Reset */
+body, header, section, footer, div {
+  background-color: #000 !important;
+  color: #fff !important;
 }
 
-/* النصوص العامة */
-.heading{
-  color: #ffffff;
+/* Links */
+a {
+  color: #ffffff !important;
 }
-.heading span{
-  color: #6c63ff;
+a:hover {
+  color: #4dabf7 !important;
 }
 
-/* Header */
-header{
-  background-color: #0f0f0f;
-  box-shadow: 0 1px 4px rgba(0,0,0,.6);
+/* Header & Navbar */
+header {
+  background: #000 !important;
+  box-shadow: none !important;
 }
 header .logo,
-header .navbar ul li a{
-  color: #ffffff;
+header .navbar ul li a {
+  color: #fff !important;
 }
-
 header .navbar ul li a.active,
-header .navbar ul li a:hover{
-  color: #6c63ff;
-  border-bottom: .2rem solid #6c63ff;
+header .navbar ul li a:hover {
+  border-bottom: 2px solid #4dabf7 !important;
 }
 
-/* Hamburger menu */
-#menu{
-  color: #ffffff;
-}
-
-/* Navbar mobile */
+/* Mobile menu */
 @media(max-width:768px){
   header .navbar{
-    background-color: #000000;
+    background: #000 !important;
   }
 }
 
 /* Work section */
-.work{
-  background: linear-gradient(to bottom, #000000, #0b0b0b);
+.work {
+  background: #000 !important;
 }
-.work h2{
-  color: #ffffff;
+.work .box-container .box {
+  background: #111 !important;
 }
-.work .heading span{
-  color: #4dabf7;
+.work .box-container .box .content {
+  background: rgba(0,0,0,0.95) !important;
 }
-
-.work .box-container .box{
-  background: #111111;
+.work .box-container .box .content .tag {
+  background: #222 !important;
 }
-.work .box-container .box .content{
-  background: rgba(0, 0, 0, 0.85);
-}
-.work .box-container .box .content .tag{
-  background: #6c63ff;
-}
-.work .box-container .box .content .tag h3{
-  color: #ffffff;
-}
-
-.work .desc p{
-  color: #e0e0e0;
+.work .box-container .box .content .tag h3 {
+  color: #fff !important;
 }
 
 /* Buttons */
-.work .button-group .btn{
-  color: #ffffff;
-  border: 1px solid #6c63ff;
+button,
+.btn {
+  background: #111 !important;
+  color: #fff !important;
+  border: 1px solid #4dabf7 !important;
 }
-.work .button-group .btn:hover,
-.work .button-group .btn.is-checked{
-  background: #6c63ff;
-  color: #ffffff;
-}
-
-.work .desc .btns .btn{
-  background: #6c63ff;
-}
-.work .desc .btns .btn:hover{
-  background: #4dabf7;
-}
-
-/* Back button */
-.backbtn .btn{
-  border: 2px solid #6c63ff;
-  color: #ffffff;
-}
-.backbtn .btn:hover{
-  background: #6c63ff;
-  color: #ffffff;
-}
-
-/* Scroll top */
-#scroll-top{
-  background: #6c63ff;
-  color: #ffffff;
+button:hover,
+.btn:hover {
+  background: #4dabf7 !important;
+  color: #000 !important;
 }
 
 /* Scrollbar */
-html::-webkit-scrollbar-track{
-  background: #111111;
+html::-webkit-scrollbar {
+  width: 8px;
 }
-html::-webkit-scrollbar-thumb{
-  background: #6c63ff;
+html::-webkit-scrollbar-track {
+  background: #000;
+}
+html::-webkit-scrollbar-thumb {
+  background: #4dabf7;
+}
+
+/* Scroll top */
+#scroll-top {
+  background: #4dabf7 !important;
+  color: #000 !important;
 }
